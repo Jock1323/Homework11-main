@@ -206,6 +206,7 @@
 .fit {
     background-color: #fff;
     padding: 180px 0 120px 0;
+    
 }
 
 .fit__card {
@@ -418,10 +419,13 @@
 /* Laptop */
 
 @media screen and (max-width:1250px) {
-   
-    .partners,.productions,.employees,.fit,.interests,.help,.resourses,.start,.footer{
+    .help,
+    .resourses,
+    .start,
+    .footer {
         display: none;
     }
+
     .container {
         max-width: 1100px;
     }
@@ -448,13 +452,40 @@
         width: 100%;
         height: 100%;
     }
+    .productions__card--text {
+        width:190px;
+    }
+    .employees {
+        background-color: #F2EFE6;
+        padding: 114px 0 120px 0;
+    }
+    
+    .employees__info {
+        text-align: center;
+        width: 760px;
+        margin: 0 auto;
+    }
+    
+    .employees__title {
+        width: 739px;
+    }
+    
+    .employees__text {
+        width: 760px;
+    }
+    .employees img{
+        width: 100%;
+    }
+    .interests__card {
+        width: 340px;
+        height: 380px;
+    }
+    
 
 
 }
 
 @media screen and (max-width:1100px) {
-
-
     .container {
         max-width: 950px;
     }
@@ -477,35 +508,59 @@
     .header__image {
         width: 500px;
     }
+
     .hero {
-        padding-top:100px;
+        padding-top: 100px;
     }
-    .hero__card img{
-        width:400px;
+
+    .hero__card img {
+        width: 400px;
         height: 400px;
     }
-    
+
     .hero__card--title {
         font-size: 40px;
     }
+
     .reversed {
         flex-direction: row-reverse;
     }
-    
+
     .liquid {
         margin-top: 105px;
     }
-    
+
     .hero__title--2 {
         width: 385px;
+    }
+
+    .partners {
+        padding: 100px 0 80x 0;
+    }
+
+    .partners__logo {
+        margin-top: 50px;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+    .productions{
+        padding: 50px 0 80px 0;
+    }
+    .productions__card--text{
+        width: 150px;
+    }
+    .employees__text {
+        width: 760px;
+        margin: 0 auto;
+    }
+    .interests__card {
+        width: 280px;
+        height: 380px;
     }
 }
 
 /* Tablet */
 @media screen and (max-width:960px) {
-
-   
-
     .container {
         max-width: 920px;
     }
@@ -543,12 +598,52 @@
     .header__image {
         width: 480px;
     }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero__card img {
+        width: 380px;
+        height: 380px;
+    }
+
+    .hero__card--title {
+        font-size: 40px;
+    }
+
+    .reversed {
+        flex-direction: row-reverse;
+    }
+
+    .liquid {
+        margin-top: 80px;
+    }
+
+    .hero__title--2 {
+        width: 385px;
+    }
+    .productions__card--text{
+        width: 150px;
+    }
+    .employees__text {
+        width: 760px;
+        margin: 0 auto;
+    }
+    .fit{
+        padding: 50px 0;
+        
+    }
+    .interests__card {
+        padding:40px 40px 66px 30px;
+    }
+    .changiable__card {
+        padding: 50px 8px 66px 36px;
+    }
+    
 }
 
 @media screen and (max-width:920px) {
-
-    
-
     .container {
         max-width: 820px;
     }
@@ -566,16 +661,36 @@
         width: 320px;
         font-size: 14px;
     }
-
-    .header__image {
-        width: 460px;
+    .productions__card--text{
+        width: 150px;
+    }
+    .employees__text {
+        width: 760px;
+        margin: 0 auto;
+    }
+    .interests .change {
+        height: 430px;
+    }
+    .interests__card{
+        width: 250px;
+    }
+    
+    .interests__card--title {
+        font-size: 25px;
+    }
+    
+    .interests__list {
+        margin-top: 23px;
+    }
+    
+    .interests__list--item {
+        margin-left:0px;
+        font-size: 13px;
+        width: 200px;
     }
 }
 
 @media screen and (max-width:820px) {
-
-   
-
     .container {
         max-width: 720px;
     }
@@ -583,10 +698,71 @@
     .header__info {
         margin-top: 40px;
     }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero__card img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero__card--info {
+        margin-top: 80px;
+    }
+
+    .hero__card--title,
+    .hero__title--2 {
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .liquid {
+        margin-top: 60px;
+    }
+
+    .partners {
+        padding: 40px 0;
+    }
+
+    .partners__title {
+        width: 100%;
+    }
+
+    .partners__logo {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .employees{
+        padding: 60px 0;
+    }
+    .employees__info{
+        width: 700px;
+        margin-top: 20px;
+    }
+    .employees__title,
+    .employees__text{
+        width:600px;
+        margin: 0 auto;
+    }
+    .interests__cards{
+        flex-wrap: wrap;
+    }
+    .interests__card{
+        width: 48%;
+    }
+    .interests__list--item {
+       font-size: 16px;
+        margin-top: 15px;
+        margin-left: 12px;
+    }
 }
+    /* .employees img{
+        width: 100%;
+    } */
 
 @media screen and (max-width:730px) {
-
     .container {
         max-width: 650px;
     }
@@ -613,12 +789,68 @@
     .header__image {
         width: 350px;
     }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero__card img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero__card--info {
+        margin-top: 60px;
+    }
+
+    .hero__card--title,
+    .hero__title--2 {
+        font-size: 25px;
+        width: 210px;
+    }
+
+    .liquid {
+        margin-top: 60px;
+    }
+
+    .partners__title {
+        width: 100%;
+    }
+    .productions__cards{
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .productions__card{
+        width: 48%;
+        text-align: center;
+    }
+    .productions__card:nth-child(n+3){
+        margin-top: 20px;
+    }
+    .productions__card--text{
+        width:300px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .employees__info{
+        width: 630px;
+        margin-top: 20px;
+    }
+    .employees__text,
+    .employees__title{
+        width: 600px;
+    }
+    /* .interests__cards{
+        flex-direction: column;
+    } */
+    /* .interests__card{
+        width: 100%;
+    } */
 }
+
 
 /* Phone */
 @media screen and (max-width:660px) {
-
-    
     .container {
         max-width: 560px;
     }
@@ -627,7 +859,7 @@
         display: block;
     }
 
-     .logo {
+    .logo {
         width: 100px;
         height: 60px;
     }
@@ -659,12 +891,79 @@
         font-size: 25px;
         color: #FBFAF7;
     }
+
+    .hero {
+        padding-top: 30px;
+    }
+
+    .hero__card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero__card--info {
+        margin-top: 20px;
+    }
+
+    .hero__card--title,
+    .hero__title--2 {
+        font-size: 25px;
+        width: 210px;
+        line-height: 30px;
+    }
+
+    .hero__card--text {
+        font-size: 15px;
+    }
+
+    .liquid {
+        margin-top: 40px;
+    }
+
+    .partners__title {
+        width: 100%;
+    }
+
+    .partners__logo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partners__brand:nth-child(2),
+    .partners__brand:nth-child(3) {
+        margin: 0 auto;
+    }
+
+    .partners__brand:nth-child(5) {
+        margin-top: 20px;
+    }
+    .productions__cards{
+        margin-top:30px;
+    }
+    .productions__card--text{
+        width:280px;
+    }
+    .employees__info{
+        width: 520px;
+        margin-top: 20px;
+    }
+    .employees__text,
+    .employees__title{
+        width:500px;
+    }
+    .interests{
+        padding-bottom: 60px;
+    }
+
+    .interests__card--title{
+        font-size:22px;
+    }
+    .interests__list--item{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:570px) {
-
-    
-
     .container {
         max-width: 500px;
     }
@@ -697,37 +996,157 @@
         margin-top: 20px;
     }
 
-    
-}
-
-@media screen and (max-width:500px) {
-
-    
-
-    .container {
-        max-width: 400px;
+    .hero {
+        padding-top: 30px;
     }
 
+    .hero__card {
+        display: block;
+        text-align: center;
+    }
+
+    .hero__card img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero__card--info {
+        margin-top: 20px;
+    }
+
+    .hero__card--title,
+    .hero__title--2 {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero__card--text {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .reversed {
+        margin-top: 30px;
+    }
+
+    .liquid {
+        margin-top: 30px;
+    }
+    .productions__title{
+        width: 100%;
+    }
+    .productions__card--text{
+        width:240px;
+    }
+    .employees__info{
+        width:100%;
+        margin-top: 20px;
+    }
+    .employees__text,
+    .employees__title{
+        width:100%;
+    }
+    .employees__text{
+        margin-top: 20px;
+    }
+    .interests{
+        padding-bottom: 60px;
+    }
+    .interests__cards{
+        flex-direction: column;
+    }
+    .interests__card{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .interests__card:nth-child(n+1){
+        margin-top:30px;
+    }
+
+    .interests__card--title{
+        font-size:22px;
+    }
+    .interests__list--item{
+        font-size: 18px;
+        width:300px;
+        list-style: none;
+    }
 }
 
-@media screen and (max-width:400px) {
 
- 
-
+@media screen and (max-width:500px) {
     .container {
-        max-width: 320px;
+        max-width: 400px;
     }
 
     .header__image {
         width: 300px;
     }
 
+    .hero__card--text {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .partners__brand:nth-child(n+3) {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .productions__cards{
+    flex-direction: column;
+    align-items: center;
+    }
+    .productions__title{
+        width: 100%;
+    }
+    .productions__card--text{
+        width:100%
+    }
+    .productions__card:nth-child(n+1){
+        margin-top: 20px;
+    }
+    .employees img{
+        height:100%;
+        margin-top: 20px;
+    }
+    .employees__text{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .interests__card{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .partners__logo {
+        justify-content: space-between;
+    }
+
+    .partners__brand:nth-child(2),
+    .partners__brand:nth-child(3),
+    .partners__brand:nth-child(n+3) {
+        margin: 0;
+    }
+
+    .partners__brand:nth-child(5) {
+        margin-top: 20px;
+    }
+    .interests__list--item{
+        font-size: 14px;
+        width:200px;
+    }
 }
 
 @media screen and (max-width:320px) {
-
-    
-
     .container {
         max-width: 290px;
     }
@@ -735,4 +1154,36 @@
     .header__image {
         width: 270px;
     }
+
+    .hero__card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero__card--text,
+    .hero__card--title,
+    .hero__title--2 {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .hero__card--text {
+        font-size: 14px;
+    }
+    .productions__card--text{
+        width:100%;
+        margin-top: 15px;
+    }
+    .productions__card:nth-child(n+1){
+        margin-top: 20px;
+    }
+    .employees__text{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .interests__list--item{
+        margin-left: 0;
+    }
+
+
 }
